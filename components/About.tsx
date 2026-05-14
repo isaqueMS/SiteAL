@@ -39,7 +39,7 @@ const About: React.FC = () => {
               <span className="w-12 h-[1px] bg-pink-500"></span>
               <span className="text-pink-500 text-xs font-bold uppercase tracking-[0.4em]">Nossa Essência</span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+            <h2 className="text-3xl md:text-6xl font-bold text-white leading-tight">
               Onde o Estilo encontra a <span className="italic font-serif text-pink-500">Sofisticação</span>
             </h2>
           </div>

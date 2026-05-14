@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <span className="text-pink-500 text-xs font-bold uppercase tracking-[0.4em]">Beauty Experience</span>
             </div>
             
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold leading-tight md:leading-none">
+            <h1 className="text-4xl sm:text-7xl lg:text-8xl font-bold leading-tight md:leading-none">
               <span className="block text-white">Beleza que</span>
               <span className="block italic font-serif gradient-text">Inspira.</span>
             </h1>
@@ -46,15 +46,15 @@ const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               </a>
             </div>
 
-            <div className="flex items-center space-x-12 pt-12">
+            <div className="flex flex-wrap items-center gap-8 md:gap-12 pt-12">
               <div>
-                <p className="text-3xl font-serif text-white font-bold">4.9</p>
-                <p className="text-stone-500 text-[10px] uppercase tracking-widest font-bold">Avaliação Google</p>
+                <p className="text-2xl md:text-3xl font-serif text-white font-bold">4.9</p>
+                <p className="text-stone-500 text-[8px] md:text-[10px] uppercase tracking-widest font-bold">Avaliação Google</p>
               </div>
-              <div className="w-[1px] h-10 bg-white/10"></div>
+              <div className="hidden sm:block w-[1px] h-10 bg-white/10"></div>
               <div>
-                <p className="text-3xl font-serif text-white font-bold">4+</p>
-                <p className="text-stone-500 text-[10px] uppercase tracking-widest font-bold">Anos de Histórica</p>
+                <p className="text-2xl md:text-3xl font-serif text-white font-bold">4+</p>
+                <p className="text-stone-500 text-[8px] md:text-[10px] uppercase tracking-widest font-bold">Anos de História</p>
               </div>
             </div>
           </div>

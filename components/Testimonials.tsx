@@ -11,7 +11,7 @@ const Testimonials: React.FC = () => {
           <span className="text-pink-500 text-xs font-bold uppercase tracking-[0.4em]">Depoimentos</span>
           <span className="w-12 h-[1px] bg-pink-500"></span>
         </div>
-        <h2 className="text-5xl font-bold text-white mb-6">Experiências <span className="italic font-serif">Inesquecíveis</span></h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center md:text-left">Experiências <span className="italic font-serif">Inesquecíveis</span></h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, onOpenBooking }) => {
             </div>
             <div className="absolute -inset-1 bg-pink-500 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity"></div>
           </div>
-          <span className="font-serif text-sm md:text-xl font-bold tracking-widest text-white uppercase block">
+          <span className="font-serif text-[10px] xs:text-xs sm:text-sm md:text-xl font-bold tracking-widest text-white uppercase block">
             Studio <span className="text-pink-500">Alesandra</span> Sena
           </span>
         </a>

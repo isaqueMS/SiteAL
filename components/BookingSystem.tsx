@@ -34,15 +34,15 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
   }, [step, booking]);
 
   return (
-    <div className="bg-stone-900/90 backdrop-blur-xl border border-white/10 p-6 md:p-10 rounded-[2.5rem] shadow-2xl max-w-4xl mx-auto overflow-hidden">
+    <div className="bg-stone-900/90 backdrop-blur-xl border border-white/10 p-5 md:p-10 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl max-w-4xl mx-auto overflow-hidden">
       {/* Progress Bar */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="flex items-center justify-between mb-8 md:mb-12 px-2">
         {[1, 2, 3, 4].map((i) => (
           <div key={i} className="flex items-center flex-1 last:flex-none">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all ${step >= i ? 'bg-pink-500 text-white shadow-[0_0_15px_rgba(244,114,182,0.5)]' : 'bg-stone-800 text-stone-500'}`}>
+            <div className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center font-bold text-[10px] md:text-sm transition-all ${step >= i ? 'bg-pink-500 text-white shadow-[0_0_15px_rgba(244,114,182,0.5)]' : 'bg-stone-800 text-stone-500'}`}>
               {i}
             </div>
-            {i < 4 && <div className={`h-[2px] flex-1 mx-4 transition-all ${step > i ? 'bg-pink-500' : 'bg-stone-800'}`}></div>}
+            {i < 4 && <div className={`h-[1px] md:h-[2px] flex-1 mx-2 md:mx-4 transition-all ${step > i ? 'bg-pink-500' : 'bg-stone-800'}`}></div>}
           </div>
         ))}
       </div>

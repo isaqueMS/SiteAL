@@ -11,7 +11,7 @@ const ProfessionalsList: React.FC = () => {
           <span className="text-pink-500 text-xs font-bold uppercase tracking-[0.4em]">Time de Especialistas</span>
           <span className="w-12 h-[1px] bg-pink-500"></span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
           Nossa <span className="italic font-serif text-pink-500">Equipe</span>
         </h2>
         <p className="mt-6 text-stone-400 max-w-2xl mx-auto font-light leading-relaxed italic">
