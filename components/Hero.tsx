@@ -62,14 +62,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative z-10 w-full aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl group">
               <img 
-                src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&q=80&w=800" 
-                alt="Manicure de luxo" 
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" 
+                alt="Especialista em Mega Hair" 
                 className="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-8 left-8">
                 <p className="text-white font-serif text-2xl italic">Especialidade do Studio</p>
-                <p className="text-pink-500 text-xs font-bold uppercase tracking-widest">Alongamento em Gel Premium</p>
+                <p className="text-pink-500 text-xs font-bold uppercase tracking-widest">Alongamento Mega Hair & Alisamentos</p>
               </div>
             </div>
             
