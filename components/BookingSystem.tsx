@@ -51,7 +51,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
         {/* Step 1: Services */}
         {step === 1 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-            <h3 className="text-3xl font-serif text-white mb-2">Selecione o Serviço</h3>
+            <h3 className="text-3xl font-serif text-pink-500 text-rose-glow mb-2">Selecione o Serviço</h3>
             <p className="text-stone-500 mb-8 font-light italic">Escolha o procedimento que deseja realizar.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
               {SERVICES.map((s) => (
@@ -60,8 +60,8 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
                   onClick={() => setBooking({ ...booking, service: s.name })}
                   className={`p-4 rounded-2xl border text-left transition-all ${booking.service === s.name ? 'border-pink-500 bg-pink-500/10 text-white' : 'border-white/5 bg-white/5 text-stone-400 hover:border-white/20'}`}
                 >
-                  <p className="font-semibold">{s.name}</p>
-                  <p className="text-[10px] uppercase tracking-widest opacity-60 mt-1">{s.category}</p>
+                  <p className={`font-semibold ${booking.service === s.name ? 'text-white' : 'text-pink-500/90'}`}>{s.name}</p>
+                  <p className="text-[10px] uppercase tracking-widest opacity-60 mt-1 text-pink-400">{s.category}</p>
                 </button>
               ))}
             </div>
@@ -71,7 +71,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
         {/* Step 2: Professional */}
         {step === 2 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-            <h3 className="text-3xl font-serif text-white mb-2">Sua Especialista</h3>
+            <h3 className="text-3xl font-serif text-pink-500 text-rose-glow mb-2">Sua Especialista</h3>
             <p className="text-stone-500 mb-8 font-light italic">Com quem você deseja agendar?</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {PROFESSIONALS.map((p) => (
@@ -84,7 +84,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
                     <img src={`https://picsum.photos/seed/${p.name}/100/100`} alt={p.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="text-left">
-                    <p className={`font-bold ${booking.professional === p.name ? 'text-white' : 'text-stone-300'}`}>{p.name}</p>
+                    <p className={`font-bold ${booking.professional === p.name ? 'text-white' : 'text-pink-500/90'}`}>{p.name}</p>
                     <p className="text-xs text-stone-500">{p.role}</p>
                   </div>
                 </button>
@@ -96,7 +96,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
         {/* Step 3: Date & Time */}
         {step === 3 && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-500">
-            <h3 className="text-3xl font-serif text-white mb-2">Data e Horário</h3>
+            <h3 className="text-3xl font-serif text-pink-500 text-rose-glow mb-2">Data e Horário</h3>
             <p className="text-stone-500 mb-8 font-light italic">Quando podemos te receber?</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div>
@@ -133,7 +133,7 @@ const BookingSystem: React.FC<BookingSystemProps> = ({ onClose }) => {
             <div className="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center text-white mx-auto mb-8 shadow-[0_0_30px_rgba(244,114,182,0.4)]">
                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
             </div>
-            <h3 className="text-4xl font-serif text-white mb-4">Quase Tudo Pronto!</h3>
+            <h3 className="text-4xl font-serif text-pink-500 text-rose-glow mb-4">Quase Tudo Pronto!</h3>
             <p className="text-stone-400 mb-10 font-light">Revise os detalhes abaixo e finalize via WhatsApp.</p>
             
             <div className="max-w-md mx-auto bg-white/5 border border-white/10 rounded-3xl p-8 text-left space-y-4 mb-10">

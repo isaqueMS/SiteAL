@@ -54,14 +54,16 @@
         -webkit-text-fill-color: transparent;
       }
       .custom-scrollbar::-webkit-scrollbar {
-        width: 4px;
+        width: 6px;
       }
       .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
       }
       .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #333;
+        background: var(--rose-primary);
         border-radius: 10px;
+        box-shadow: 0 0 10px rgba(244, 114, 182, 0.2);
       }
       .custom-scrollbar::-webkit-scrollbar-thumb:hover {
         background: var(--rose-primary);
