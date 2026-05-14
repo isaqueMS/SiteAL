@@ -41,7 +41,7 @@ export const SERVICES: Service[] = [
 ];
 
 export const PROFESSIONALS: Professional[] = [
-  { name: "Alesandra", role: "Cabeleireira e Manicure", image: "/assets/profissionais/Alesandra.jpeg" },
+  { name: "Alesandra", role: "Especialista em Mega Hair e Alisamento", image: "/assets/profissionais/Alesandra.jpeg" },
   { name: "Bruna", role: "Manicure e Nail Design", image: "/assets/profissionais/Bruna.jpeg" },
   { name: "Thalita", role: "Manicure", image: "/assets/profissionais/Thalita.jpeg" },
   { name: "Soraria", role: "Manicure", image: "/assets/profissionais/Soraria.jpeg" },
