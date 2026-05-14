@@ -19,10 +19,10 @@ const ProfessionalsList: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10">
         {PROFESSIONALS.map((pro) => (
-          <div key={pro.name} className="group">
-            <div className="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-8 shadow-2xl border border-white/5">
+          <div key={pro.name} className="group max-w-[280px] mx-auto w-full">
+            <div className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2rem] aspect-[4/5] mb-4 md:mb-8 shadow-2xl border border-white/5">
               <img 
                 src={pro.image || `https://picsum.photos/seed/${pro.name}/600/800`} 
                 alt={pro.name} 
@@ -40,11 +40,11 @@ const ProfessionalsList: React.FC = () => {
               </div>
             </div>
             
-            <div className="text-center">
-              <h3 className="text-2xl font-serif text-white group-hover:text-pink-500 transition-colors mb-2">
+            <div className="text-center px-2">
+              <h3 className="text-lg md:text-2xl font-serif text-white group-hover:text-pink-500 transition-colors mb-1 md:mb-2">
                 {pro.name}
               </h3>
-              <p className="text-pink-500/80 text-[10px] font-bold uppercase tracking-[0.3em]">
+              <p className="text-pink-500/80 text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em]">
                 {pro.role}
               </p>
             </div>
