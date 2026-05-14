@@ -7,6 +7,7 @@ export interface Service {
 export interface Professional {
   name: string;
   role: string;
+  image?: string;
 }
 
 export interface Testimonial {

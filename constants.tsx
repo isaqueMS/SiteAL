@@ -41,10 +41,10 @@ export const SERVICES: Service[] = [
 ];
 
 export const PROFESSIONALS: Professional[] = [
-  { name: "Alesandra", role: "Cabeleireira e Manicure" },
-  { name: "Bruna", role: "Manicure e Nail Design" },
-  { name: "Thalita", role: "Manicure" },
-  { name: "Soraria", role: "Manicure" },
+  { name: "Alesandra", role: "Cabeleireira e Manicure", image: "/assets/profissionais/Alesandra.jpeg" },
+  { name: "Bruna", role: "Manicure e Nail Design", image: "/assets/profissionais/Bruna.jpeg" },
+  { name: "Thalita", role: "Manicure", image: "/assets/profissionais/Thalita.jpeg" },
+  { name: "Soraria", role: "Manicure", image: "/assets/profissionais/Soraria.jpeg" },
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

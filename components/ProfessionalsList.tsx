@@ -24,7 +24,7 @@ const ProfessionalsList: React.FC = () => {
           <div key={pro.name} className="group">
             <div className="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-8 shadow-2xl border border-white/5">
               <img 
-                src={`https://picsum.photos/seed/${pro.name}/600/800`} 
+                src={pro.image || `https://picsum.photos/seed/${pro.name}/600/800`} 
                 alt={pro.name} 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[40%] group-hover:grayscale-0"
               />
